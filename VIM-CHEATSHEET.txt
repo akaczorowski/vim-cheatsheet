@@ -6,34 +6,48 @@ s - remove single char and insert
 x - delete forward single char
 X - delete backward single char
 yy - copy line
+y$ - copie to end of line
+p - paste
+
 dd - delete line
 cc - delete line and insert
-p - paste
 D -  delete to end of line
-y$ - copie to end of line
 C - delete to end of line and insert
-di} - delete whole body to }
+c - change word
+
+di} - delete whole body to } (you can use this pattern also with y or v e.g. yi}, vi})
 ci} - delete whole body to } and insert
 d2i} - delete 2x whole body to }
 da} - delete whole body with }
 diw - delete whole word (even if in a middle of it)
 dw - delete whole word from the carete position
-i - insert |(
-a - insert  (|
+
+i - insert before cursor |(
+a - insert after cursor (|
 I - insert at beinging of line
 A - insert at the end of line
+o - insert after current line
+O - insert before current line
+
 b - move carete backward one word
 w - move carete foward one word
 e - move caret to end of word
 ^ - move carete to beginning of line
 0 - beinging of the line including whitespace
 $ - move carete to end of line
+shift+[ - move to paragraph
+
+
 v - horizontal visual mode
 V - vertical visual mode
+viw - select word
+vis - select sentence
+
 t( - move carete forward before (
 f( - move carete forward on (
 T( - move carete backward before (
 F( - move carete backward on (
+
 :100 or 100G  - move carete to line 100
 shift + { or } - move to paragraph
 ctrl + d - scroll 10 line down
@@ -42,7 +56,13 @@ ctrl + u - scroll 10 line up
 shift + # - search up phrase carete is on
 shift + * - search down phrase carete is on
 shift + J - concat line with next one
+
+gg - beginning of file
+G - end of file
 zz - center carete on screen
+ctrl+ d/u - move carete half a page
+ctrl+ f/b - move carete full page
+
 
 . - repeat previous command
 ctrl + o - move backward in history
