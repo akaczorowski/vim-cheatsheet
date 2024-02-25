@@ -15,13 +15,6 @@ D -  delete to end of line
 C - delete to end of line and insert
 c - change word
 
-di} - delete whole body to } (you can use this pattern also with y or v e.g. yi}, vi})
-ci} - delete whole body to } and insert
-d2i} - delete 2x whole body to }
-da} - delete whole body with }
-diw - delete whole word (even if in a middle of it)
-dw - delete whole word from the carete position
-
 i - insert before cursor |(
 a - insert after cursor (|
 I - insert at beinging of line
@@ -47,6 +40,22 @@ t( - move carete forward before (
 f( - move carete forward on (
 T( - move carete backward before (
 F( - move carete backward on (
+
+#### text objects selection https://stackoverflow.com/a/1062001   
+
+vi' - select between the single quotes
+vib - Inside a parenthesis block, I use
+viB - Inside a curly braces block you can use
+(To make the selections "inclusive" (select also the quotes, parenthesis or braces) you can use a instead of i.)
+
+di} - delete whole body to } (you can use this pattern also with y or v e.g. yi}, vi})
+ci} - delete whole body to } and insert
+d2i} - delete 2x whole body to }
+da} - delete whole body with }
+diw - delete whole word (even if in a middle of it)
+dw - delete whole word from the carete position
+
+
 
 :100 or 100G  - move carete to line 100
 shift + { or } - move to paragraph
